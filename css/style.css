@@ -1,0 +1,233 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url("../img/bg.png") black; /* **CREATIVE COMMONS LICENSED FLICKR IMAGE** */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
+}
+#mainHeader, #mainContent{
+    width: 40%;
+    margin: 0 auto;
+}
+#mainHeader{
+    margin: 40px auto;
+}
+#logo{
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+#logo span{
+    font-size: 115px;
+}
+#infoTxt{
+    text-align: center;
+    font-size: 25px;
+}
+#mainContent h2, #mainContent p {
+    text-align: center;
+    font-size: 32px;
+    text-shadow: 1px 1px 2px #333;
+}
+.titleTxt{
+    font-weight: 600;
+}
+input, button{
+    height: 60px;
+    color: whitesmoke;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    box-sizing: border-box;
+}
+button{
+    background-color: #BC63FF;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    font-size: 25px;
+    padding: 0 20px;
+}
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    background-color: white;
+    color: #BC63FF;
+}
+#nameTxt{
+    width: 50%;
+    background: none;
+    background-color: rgba(20, 20, 20, 0.4);
+    border-bottom: 2px solid whitesmoke;
+    margin-left: 15%;
+    font-size: 32px;
+}
+#nameTxt:focus{
+    outline: none;
+}
+#addNameBtn{
+    margin: auto;
+}
+#namesP{
+    margin-top: -20px;
+}
+#startBtn{
+    margin: 0 auto;
+    display: block;
+    font-size: 30px;
+    margin-bottom: 120px !important;
+}
+#nameRoller{
+    margin: 20px 0;
+    font-size: 50px;
+}
+#dialog{
+    text-align: center;
+    height: 230px !important;
+}
+.ui-widget{
+    font-size: 24px;
+}
+.ui-widget-overlay{
+    background: black;
+    opacity: 0.6;
+}
+.ui-widget, .ui-widget button{
+    font-family: 'Raleway', sans-serif !important;
+}
+.ui-dialog-buttonset{
+    margin: 0 auto;
+    width: 88%;
+}
+.ui-dialog .ui-dialog-buttonpane {
+    border-width: 0 !important;
+    padding: 30px !important;
+    margin: 20px auto !important;
+    margin-top: -50px !important;
+}
+.ui-dialog .ui-dialog-buttonpane button{
+    font-size: 17px;
+    /*
+    margin: -10px 8px 20px 0 !important;
+    */
+    background: none;
+    background-color: #BC63FF !important;
+    color: white;
+}
+.ui-widget-header{
+    display: none;
+    border: none;
+    background: none;
+}
+#resultTxt{
+    margin: 0;
+}
+
+.italicTxt{
+    font-style: italic; 
+}
+.animPulsate{
+    color: #BC63FF;
+    animation: pulsate 0.5s 0s infinite;
+    -webkit-animation: pulsate 0.5s 0s infinite;
+    -moz-animation: pulsate 0.5s 0s infinite;
+    -ms-animation: pulsate 0.5s 0s infinite;
+    -o-animation: pulsate 0.5s 0s infinite;
+}
+@keyframes pulsate{
+    from{opacity: 1; transform: scale(1.1, 1.1);}
+    to{opacity: 0.4; transform: scale(1, 1);}
+}
+@-webkit-keyframes pulsate{
+    from{opacity: 1; -webkit-transform: scale(1.1, 1.1);}
+    to{opacity: 0.4; -webkit-transform: scale(1, 1);}
+}
+@-moz-keyframes pulsate{
+    from{opacity: 1; -moz-transform: scale(1.1, 1.1);}
+    to{opacity: 0.4; -moz-transform: scale(1, 1);}
+}
+@-ms-keyframes pulsate{
+    from{opacity: 1; -ms-transform: scale(1.1, 1.1);}
+    to{opacity: 0.4; -ms-transform: scale(1, 1);}
+}
+@-o-keyframes pulsate{
+    from{opacity: 1; -o-transform: scale(1.1, 1.1);}
+    to{opacity: 0.4; -o-transform: scale(1, 1);}
+}
+
+/*<<<<<<<<<<<<<<<<< MEDIA QUERIES >>>>>>>>>>>>>>>>>>>>>>>*/
+@media(max-width:767px){
+    #mainHeader, #mainContent{
+    width: 100%;
+    margin: 0 auto;
+    }
+    #logo{
+    font-size: 45px;
+    margin: 20px 0;
+    }
+    #logo span{
+    font-size: 55px;
+    }
+    #infoTxt{
+    font-size: 14px;
+    width: 90%;
+    margin: 0 auto;    
+    }
+    #mainContent h2, #mainContent p {
+        font-size: 22px;
+    }
+    input, button{
+        width: 90% !important;
+        display: block;
+        margin: 0 auto !important;
+    }
+    #addNameBtn{
+        margin-top: 20px !important;
+    }
+    #startBtn{
+        margin-bottom: 50px !important;
+        font-size: 26px;
+    }
+	.ui-dialog{
+        width: 90% !important;
+    }
+    .ui-dialog .ui-dialog-content{
+        height: 170px !important;
+    }
+    .ui-dialog .ui-dialog-buttonpane button{
+        margin-top: 10px !important; 
+    }
+}
+@media(min-width:768px) and (max-width: 991px){
+	#mainHeader, #mainContent{
+    width: 80%;
+    margin: 0 auto;
+    }
+    #logo{
+    margin: 30px 0 20px 0;
+    }
+    
+}
+@media(min-width:992px){
+    #mainHeader, #mainContent{
+    width: 80%;
+    }
+    input{
+    width: 40% !important;
+    margin-left: 20% !important;
+    }
+}
+@media(min-width:1200px){
+	input{
+    width: 32% !important;
+    margin-left: 28% !important;
+    }	
+}
